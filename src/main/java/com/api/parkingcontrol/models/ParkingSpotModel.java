@@ -15,7 +15,7 @@ public class ParkingSpotModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     @Column(nullable = false, unique = true, length = 10)
-    private String parkinSpotNumber;
+    private String parkingSpotNumber;
     @Column(nullable = false, unique = true, length = 7)
     private String licensePlateCar;
     @Column(nullable = false, length = 70)
@@ -41,12 +41,12 @@ public class ParkingSpotModel implements Serializable {
         this.id = id;
     }
 
-    public String getParkinSpotNumber() {
-        return parkinSpotNumber;
+    public String getParkingSpotNumber() {
+        return parkingSpotNumber;
     }
 
-    public void setParkinSpotNumber(String parkinSpotNumber) {
-        this.parkinSpotNumber = parkinSpotNumber;
+    public void setParkingSpotNumber(String parkinSpotNumber) {
+        this.parkingSpotNumber = parkinSpotNumber;
     }
 
     public String getLicensePlateCar() {
